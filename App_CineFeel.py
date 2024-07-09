@@ -88,21 +88,21 @@ def programme_cinefeel():
                 st.image(df.loc[index[0][0], "poster_link"])
         
         with col2:
-            selectl1 = f"<p style='font-weight: bold; font-size: 20px;line-height: 1;'>{df.loc[index[0][0], "movie_title"]}</p>"
+            selectl1 = f"<p style='font-weight: bold; font-size: 20px;line-height: 1;'>{df.loc[index[0][0], 'movie_title']}</p>"
             st.markdown(selectl1, unsafe_allow_html=True)
-            if df.loc[index[0][0], "awards"] == '0' or type(df.loc[index[0][0], "awards"]) == float:
-                selectl2 = f"<p style='font-size: 16px;line-height: 1;'>{df.loc[index[0][0], "director_name"]}&nbsp; - &nbsp;{df.loc[index[0][0], "country"]}&nbsp; - &nbsp;{str(int(df.loc[index[0][0], "title_year"]))}</p>"
+            if df.loc[index[0][0], 'awards'] == '0' or type(df.loc[index[0][0], 'awards']) == float:
+                selectl2 = f"<p style='font-size: 16px;line-height: 1;'>{df.loc[index[0][0], 'director_name']}&nbsp; - &nbsp;{df.loc[index[0][0], 'country']}&nbsp; - &nbsp;{str(int(df.loc[index[0][0], 'title_year']))}</p>"
             else:
-                selectl2 = f"<p style='font-size: 16px;line-height: 1;'>{df.loc[index[0][0], "director_name"]}&nbsp; - &nbsp;{df.loc[index[0][0], "country"]}&nbsp; - &nbsp;{str(int(df.loc[index[0][0], "title_year"]))}&nbsp; - &nbsp;{df.loc[index[0][0], "awards"]}</p>"
+                selectl2 = f"<p style='font-size: 16px;line-height: 1;'>{df.loc[index[0][0], 'director_name']}&nbsp; - &nbsp;{df.loc[index[0][0], 'country']}&nbsp; - &nbsp;{str(int(df.loc[index[0][0], 'title_year']))}&nbsp; - &nbsp;{df.loc[index[0][0], 'awards']}</p>"
             st.markdown(selectl2, unsafe_allow_html=True)
-            selectl3 = f"<p style='font-size: 16px;line-height: 1;'>{df.loc[index[0][0], "actor_1_name"]}&nbsp; - &nbsp;{df.loc[index[0][0], "actor_2_name"]}&nbsp; - &nbsp;{df.loc[index[0][0], "actor_3_name"]}</p>"
+            selectl3 = f"<p style='font-size: 16px;line-height: 1;'>{df.loc[index[0][0], 'actor_1_name']}&nbsp; - &nbsp;{df.loc[index[0][0], 'actor_2_name']}&nbsp; - &nbsp;{df.loc[index[0][0], 'actor_3_name']}</p>"
             st.markdown(selectl3, unsafe_allow_html=True)
-            selectl4 = f"<p style='font-size: 16px;line-height: 1;'>{df.loc[index[0][0], "genres"]}&nbsp; - &nbsp;{str(df.loc[index[0][0], "imdb_score"])}&nbsp; - &nbsp;{int(df.loc[index[0][0], "budget"])} $</p>"
+            selectl4 = f"<p style='font-size: 16px;line-height: 1;'>{df.loc[index[0][0], 'genres']}&nbsp; - &nbsp;{str(df.loc[index[0][0], 'imdb_score'])}&nbsp; - &nbsp;{int(df.loc[index[0][0], 'budget'])} $</p>"
             st.markdown(selectl4, unsafe_allow_html=True)
-            if df.loc[index[0][0], "plot"] == '0' or type(df.loc[index[0][0], "plot"]) == float:
+            if df.loc[index[0][0], 'plot'] == '0' or type(df.loc[index[0][0], 'plot']) == float:
                 pass
             else:
-                selectl5 = f"<p style='font-size: 16px;line-height: 1;'>Synopsis : {df.loc[index[0][0], "plot"]}</p>"
+                selectl5 = f"<p style='font-size: 16px;line-height: 1;'>Synopsis : {df.loc[index[0][0], 'plot']}</p>"
                 st.markdown(selectl5, unsafe_allow_html=True)
             selectl6=f"<br>"
             st.markdown(selectl6, unsafe_allow_html=True)
