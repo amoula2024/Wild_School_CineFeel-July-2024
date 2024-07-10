@@ -97,7 +97,7 @@ def programme_cinefeel():
             st.markdown(selectl2, unsafe_allow_html=True)
             selectl3 = f"<p style='font-size: 16px;line-height: 1;'>{df.loc[index[0][0], 'actor_1_name']}&nbsp; - &nbsp;{df.loc[index[0][0], 'actor_2_name']}&nbsp; - &nbsp;{df.loc[index[0][0], 'actor_3_name']}</p>"
             st.markdown(selectl3, unsafe_allow_html=True)
-            selectl4 = f"<p style='font-size: 16px;line-height: 1;'>{df.loc[index[0][0], 'genres']}&nbsp; - &nbsp;{str(df.loc[index[0][0], 'imdb_score'])}&nbsp; - &nbsp;{int(df.loc[index[0][0], 'budget'])} $</p>"
+            selectl4 = f"<p style='font-size: 16px;line-height: 1;'>{df.loc[index[0][0], 'genres']}&nbsp; - &nbsp;{str(df.loc[index[0][0], 'imdb_score'])}&nbsp; - &nbsp;{int(df.loc[index[0][0], 'budget']):,} $</p>"
             st.markdown(selectl4, unsafe_allow_html=True)
             if df.loc[index[0][0], 'plot'] == '0' or type(df.loc[index[0][0], 'plot']) == float:
                 pass
@@ -132,7 +132,7 @@ def programme_cinefeel():
             st.markdown(selectl2, unsafe_allow_html=True)
             selectl3 = f"<p style='font-size: 16px;line-height: 1;'>{df.loc[index[0][1], 'actor_1_name']}&nbsp; - &nbsp;{df.loc[index[0][1], 'actor_2_name']}&nbsp; - &nbsp;{df.loc[index[0][1], 'actor_3_name']}</p>"
             st.markdown(selectl3, unsafe_allow_html=True)
-            selectl4 = f"<p style='font-size: 16px;line-height: 1;'>{df.loc[index[0][1], 'genres']}&nbsp; - &nbsp;{str(df.loc[index[0][1], 'imdb_score'])}&nbsp; - &nbsp;{int(df.loc[index[0][1], 'budget'])} $</p>"
+            selectl4 = f"<p style='font-size: 16px;line-height: 1;'>{df.loc[index[0][1], 'genres']}&nbsp; - &nbsp;{str(df.loc[index[0][1], 'imdb_score'])}&nbsp; - &nbsp;{int(df.loc[index[0][1], 'budget']):,} $</p>"
             st.markdown(selectl4, unsafe_allow_html=True)
             if df.loc[index[0][1], 'plot'] == '0' or type(df.loc[index[0][1], 'plot']) == float:
                 pass
@@ -160,7 +160,7 @@ def programme_cinefeel():
             st.markdown(selectl2, unsafe_allow_html=True)
             selectl3 = f"<p style='font-size: 16px;line-height: 1;'>{df.loc[index[0][2], 'actor_1_name']}&nbsp; - &nbsp;{df.loc[index[0][2], 'actor_2_name']}&nbsp; - &nbsp;{df.loc[index[0][2], 'actor_3_name']}</p>"
             st.markdown(selectl3, unsafe_allow_html=True)
-            selectl4 = f"<p style='font-size: 16px;line-height: 1;'>{df.loc[index[0][2], 'genres']}&nbsp; - &nbsp;{str(df.loc[index[0][2], 'imdb_score'])}&nbsp; - &nbsp;{int(df.loc[index[0][2], 'budget'])} $</p>"
+            selectl4 = f"<p style='font-size: 16px;line-height: 1;'>{df.loc[index[0][2], 'genres']}&nbsp; - &nbsp;{str(df.loc[index[0][2], 'imdb_score'])}&nbsp; - &nbsp;{int(df.loc[index[0][2], 'budget']):,} $</p>"
             st.markdown(selectl4, unsafe_allow_html=True)
             if df.loc[index[0][2], 'plot'] == '0' or type(df.loc[index[0][2], 'plot']) == float:
                 pass
@@ -188,7 +188,7 @@ def programme_cinefeel():
             st.markdown(selectl2, unsafe_allow_html=True)
             selectl3 = f"<p style='font-size: 16px;line-height: 1;'>{df.loc[index[0][3], 'actor_1_name']}&nbsp; - &nbsp;{df.loc[index[0][3], 'actor_2_name']}&nbsp; - &nbsp;{df.loc[index[0][3], 'actor_3_name']}</p>"
             st.markdown(selectl3, unsafe_allow_html=True)
-            selectl4 = f"<p style='font-size: 16px;line-height: 1;'>{df.loc[index[0][3], 'genres']}&nbsp; - &nbsp;{str(df.loc[index[0][3], 'imdb_score'])}&nbsp; - &nbsp;{int(df.loc[index[0][3], 'budget'])} $</p>"
+            selectl4 = f"<p style='font-size: 16px;line-height: 1;'>{df.loc[index[0][3], 'genres']}&nbsp; - &nbsp;{str(df.loc[index[0][3], 'imdb_score'])}&nbsp; - &nbsp;{int(df.loc[index[0][3], 'budget']):,} $</p>"
             st.markdown(selectl4, unsafe_allow_html=True)
             if df.loc[index[0][3], 'plot'] == '0' or type(df.loc[index[0][3], 'plot']) == float:
                 pass
@@ -216,7 +216,7 @@ def programme_cinefeel():
             st.markdown(selectl2, unsafe_allow_html=True)
             selectl3 = f"<p style='font-size: 16px;line-height: 1;'>{df.loc[index[0][4], 'actor_1_name']}&nbsp; - &nbsp;{df.loc[index[0][4], 'actor_2_name']}&nbsp; - &nbsp;{df.loc[index[0][4], 'actor_3_name']}</p>"
             st.markdown(selectl3, unsafe_allow_html=True)
-            selectl4 = f"<p style='font-size: 16px;line-height: 1;'>{df.loc[index[0][4], 'genres']}&nbsp; - &nbsp;{str(df.loc[index[0][4], 'imdb_score'])}&nbsp; - &nbsp;{int(df.loc[index[0][4], 'budget'])} $</p>"
+            selectl4 = f"<p style='font-size: 16px;line-height: 1;'>{df.loc[index[0][4], 'genres']}&nbsp; - &nbsp;{str(df.loc[index[0][4], 'imdb_score'])}&nbsp; - &nbsp;{int(df.loc[index[0][4], 'budget']):,} $</p>"
             st.markdown(selectl4, unsafe_allow_html=True)
             if df.loc[index[0][4], 'plot'] == '0' or type(df.loc[index[0][4], 'plot']) == float:
                 pass
@@ -244,7 +244,7 @@ def programme_cinefeel():
             st.markdown(selectl2, unsafe_allow_html=True)
             selectl3 = f"<p style='font-size: 16px;line-height: 1;'>{df.loc[index[0][5], 'actor_1_name']}&nbsp; - &nbsp;{df.loc[index[0][5], 'actor_2_name']}&nbsp; - &nbsp;{df.loc[index[0][5], 'actor_3_name']}</p>"
             st.markdown(selectl3, unsafe_allow_html=True)
-            selectl4 = f"<p style='font-size: 16px;line-height: 1;'>{df.loc[index[0][5], 'genres']}&nbsp; - &nbsp;{str(df.loc[index[0][5], 'imdb_score'])}&nbsp; - &nbsp;{int(df.loc[index[0][5], 'budget'])} $</p>"
+            selectl4 = f"<p style='font-size: 16px;line-height: 1;'>{df.loc[index[0][5], 'genres']}&nbsp; - &nbsp;{str(df.loc[index[0][5], 'imdb_score'])}&nbsp; - &nbsp;{int(df.loc[index[0][5], 'budget']):,} $</p>"
             st.markdown(selectl4, unsafe_allow_html=True)
             if df.loc[index[0][5], 'plot'] == '0' or type(df.loc[index[0][5], 'plot']) == float:
                 pass
@@ -429,7 +429,7 @@ def programme_dashboard():
             sns.lineplot(x='Année du film', y='Budget', marker='o', color = 'steelblue',data=filtered_movies_mean,ax=ax1,linewidth=2)
             ax2 = ax1.twinx()
             sns.lineplot(x='Année du film', y='Score IMDb', marker='o' , color = 'goldenrod',data=filtered_movies_mean,ax=ax2,linewidth=2)
-            ax1.set_title('Budget VS ROI moyen par année')
+            ax1.set_title('Budget VS Score IMDB moyen par année')
             ax1.set_xlabel('Année')
             ax1.set_ylabel('Budget ($)')
             ax2.set_ylabel('Score IMDb')
@@ -442,7 +442,7 @@ def programme_dashboard():
             sns.lineplot(x='Année du film', y='ROI', marker='o', color = 'mediumseagreen',data=filtered_movies_mean,ax=ax1,linewidth=2)
             ax2 = ax1.twinx()
             sns.lineplot(x='Année du film', y='Score IMDb', marker='o' , color = 'goldenrod',data=filtered_movies_mean,ax=ax2,linewidth=2)
-            ax1.set_title('Budget VS ROI moyen par année')
+            ax1.set_title('ROI VS Score IMDB moyen par année')
             ax1.set_xlabel('Année')
             ax1.set_ylabel('ROI')
             ax2.set_ylabel('Score IMDb')
